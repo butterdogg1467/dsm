@@ -74,11 +74,13 @@ nav > picture > img {
     background-color: blue;
     min-width: 14vw;
     min-height: 7vw;
+    max-width: 14vw;
+    max-height: 7vw;
 }
 
 .navcontent {
     display: flex;
-    text-align: center;
+    text-align: end;
 }
 
 .navbuttons > button {
@@ -154,6 +156,7 @@ section {
     padding-top: 3vw;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5vw;
 }
 
 section > h1 {
@@ -193,6 +196,7 @@ section > h1 {
     font-weight: bold;
     font-size: 2vw;
     display: flex;
+    width: 93vw;
 }
 
 .dropdown1 {
@@ -202,6 +206,55 @@ section > h1 {
 
 .dropdown2, .dropdown3 {
     border-bottom: 1px solid white;
+}
+
+.dropdownarrow {
+    max-width: 30px;
+    max-height: 30px;
+    position: relative;
+    bottom: 70px;
+}
+
+footer {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2.4vw 0px;
+}
+
+.footerlefthalf {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 11vw;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.footersm {
+    display: flex;
+    width: 5vw;
+    justify-content: space-evenly;
+}
+
+.footerrighthalf {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 16vw;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.fsmicon {
+    max-width: 20px;
+    max-height: 20px;
+    background-color: orange;
 }
 
 @media screen and (max-width: 1020px) {
