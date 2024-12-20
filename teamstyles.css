@@ -7,7 +7,6 @@ body {
     background-color: red;
     min-height: 18vw;
     min-width: 100vw;
-    display: flex;
     flex-direction: column;
 }
 
@@ -21,3 +20,33 @@ header {
     font-size: 7vw;
 }
 
+section {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    padding: 2vw 0px;
+}
+
+section > h1 {
+    font-size: 2vw;
+    margin: 0px;
+    margin-bottom: 2vw;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.photocontain > img{
+    width: 14vw;
+    height: 12vw;
+    margin-bottom: 1vw;
+    background-color: blue;
+}
