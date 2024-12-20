@@ -81,8 +81,8 @@ nav {
 
 nav > picture > img {
     background-color: blue;
-    min-width: 250px;
-    min-height: 130px;
+    min-width: 225px;
+    min-height: 100px;
     margin-top: 25px;
 }
 
@@ -91,7 +91,7 @@ nav > picture > img {
     text-align: end;
 }
 
-.navbuttons > button {
+.navbuttons > a > button, .navbuttons > button {
     background: transparent;
     color: white;
     font-size: 18px;
@@ -108,7 +108,7 @@ nav > picture > img {
     }
 }
 
-.navbuttons > button:hover {
+.navbuttons > button:hover, .navbuttons > a > button:hover {
     cursor: pointer;
     text-decoration: underline;
     animation: underline 0.2s;
