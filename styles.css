@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    display: flex;
+    flex-direction: column;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+    border: none;
+    appearance: none;
+}
+
+.headernavbg {
+    max-width: 100vw;
+    background-color: palegoldenrod;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: transparent;
+    min-height: 100px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+nav > picture > img {
+    background-color: blue;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.navcontent {
+    display: flex;
+    text-align: center;
+}
+
+.navbuttons > button {
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+.navbuttons > button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.navsm {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 150px;
+    margin-left: 50px;
+    gap: 30px;
+}
+
+.smicon {
+    max-height: 30px;
+    max-width: 30px;
+    background-color: orange;
+}
+
+header {
+    display: flex;
+    margin-left: 50px;
+    flex: 1 1 auto;
+    justify-content: start;
+    align-items: end;
+    z-index: 1;
+}
+
+.welcometo {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcometo > h1 {
+    font-size: 9vw;
+    white-space: nowrap;
+}
+
+.welcometo > h3 {
+    font-size: 2vw;
+}
+
+.headertextcontainer > h3:last-of-type {
+    font-size: 2vw;
+}
+
+.headertextcontainer {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headertextcontainer > h3 {
+    margin-top: 15px;
+}
+
+section {
+    background-color: red;
+    max-width: 100vw;
+    max-height: 500px;
+    z-index: 1;
+    padding: 50px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+section > h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.sectionboxcontainer {
+    display: flex;
+    justify-content: start;
+    gap: 1vw;
+}
+
+.sectionbox {
+    width: 22.5vw;
+    height: 20vw;
+    background-color: beige;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1020px) {
+    body {
+        background-color: purple;
+    }
+
+
+}
