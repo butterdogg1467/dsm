@@ -1,0 +1,64 @@
+.fullpagebgmember {
+    background-color: maroon;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: none;
+    padding-top: 6vw;
+}
+
+section > div:first-of-type > h1 {
+    font-size: 5vw;
+    margin-left: 3vw;
+}
+
+section > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 50px;
+}
+
+section > div:nth-of-type(2) > h2 {
+    font-size: clamp(25px, 2vw, 30px);
+}
+
+section > div:nth-of-type(2) > ul {
+    font-size: clamp(20px, 1.2vw, 25px);
+    margin-bottom: 6vw;
+}
+
+section > div:nth-of-type(2) > ul > li {
+    margin-bottom: 0.4vw;
+    margin-left: 0.5vw;
+}
+
+section > div:nth-of-type(2) > a {
+    font-size: 3vw;
+}
+
+section > div:last-of-type > picture {
+    display: flex;
+    margin-right: 5vw;
+}
+
+section > div:last-of-type > picture > img {
+    height: 14vw;
+    width: 23vw;
+    background-color: blue;
+}
+
+section > div:last-of-type > picture:first-of-type > img {
+    background-color: brown;
+    position: relative;
+    right: 30px;
+    top: 60px;
+}
+
+section > div:last-of-type > picture:last-of-type > img {
+    position: relative;
+    left: 50px;
+}
