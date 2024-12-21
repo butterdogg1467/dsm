@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.navheaderbgjoin {
+    background-color: blueviolet;
+    min-height: 24vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1contain > h1 {
+    font-size: 7vw;
+    margin-bottom: 3.5vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    min-height: 15vw;
+}
+
+.sectiontext > h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 1.2vw;
+    flex-wrap: wrap;
+}
+
+.sectiontext > h3 {
+    font-size: 30px;
+    text-wrap: wrap;
+}
+
+@keyframes underlinerev {
+    from {
+        text-underline-offset: 7px;
+    }
+
+    to {
+        text-underline-offset: 4px;
+    }
+}
+
+section > button {
+    padding: 3vw 5vw;
+    background-color: white;
+    border-radius: 25px;
+    max-width: fit-content;
+    text-decoration-thickness: 1.4px;
+    text-decoration-line: underline;
+    text-underline-offset: 7px;
+    font-size: 30px;
+    margin-top: 1.5vw;
+}
+
+section > button > strong {
+    font-weight: bold;
+}
+
+section > button:hover {
+    cursor: pointer;
+    animation: underlinerev 0.2s;
+    animation-fill-mode: forwards;
+}
+
+section:last-of-type {
+    padding: 0px;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    background-color: darkgoldenrod;
+    min-height: 8vw;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel > img {
+    max-width: 50px;
+    max-height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.carousel > img:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.carousel > img:first-of-type {
+    margin-left: 1vw;
+}
+
+.carousel > img:last-of-type {
+    margin-right: 1vw;
+    left: 92vw;
+}
