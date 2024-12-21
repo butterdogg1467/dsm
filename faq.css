@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.fullpagebgfaq {
+    background-color: cornflowerblue;
+}
+
+section {
+    background: none;
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 3vw;
+}
+
+section > div > h1 {
+    font-size: 7vw;
+}
+
+.faqtextcontain {
+    max-width: 60vw;
+}
+
+.faqtextcontain > div > h2:first-of-type {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2.2vw;
+}
+
+.faqtextcontain > div:nth-of-type(1) > p,
+.faqtextcontain > div:nth-of-type(2) > p,
+.faqtextcontain > div:nth-of-type(3) > p,
+.faqtextcontain > div:nth-of-type(3) > p,
+.faqtextcontain > div:nth-of-type(3) > h3,
+.faqtextcontain > div:nth-of-type(3) > ul {
+    font-size: 20px;
+}
+
+
+.faqtextcontain > div:nth-of-type(1) > p,
+.faqtextcontain > div:nth-of-type(2) > p,
+.faqtextcontain > div:nth-of-type(3) > p {
+    margin-bottom: 2.2Avw;
+}
+
+.faqtextcontain > div:nth-of-type(3) > p {
+    margin-bottom: 1vw;
+}
+
+.faqtextcontain > div:nth-of-type(3) > ul {
+    list-style-type: disc;
+}
+
+.faqtextcontain > div:nth-of-type(3) > ul > li {
+    margin-bottom: 0.5vw;
+}
+
+
+
