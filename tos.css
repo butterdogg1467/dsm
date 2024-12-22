@@ -1,0 +1,21 @@
+.navheaderbgtos {
+    background-color: darkgoldenrod;
+    min-height: 25vw;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vw;
+}
+
+header > div > h1 {
+    color: white;
+    font-size: 3vw;
+    margin-top: 7vw
+}
+
+section {
+    background: darkcyan;
+    min-height: 50vw;
+}
