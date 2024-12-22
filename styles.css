@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,10 +51,18 @@ button {
     appearance: none;
 }
 
+h1, h2, h3, button, a {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+h1, h3, h2 {
+    font-weight: bold;
+}
+
 .headernavbg {
     max-width: 100vw;
     min-height: 35vw;
-    background-color: palegoldenrod;
+    background-color: black;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -93,6 +104,8 @@ nav > picture > img {
     color: white;
     font-size: 18px;
     margin-left: 25px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 500;
 }
 
 @keyframes underline {
@@ -163,12 +176,18 @@ header {
 }
 
 .welcometo > h1 {
-    font-size: 8vw;
+    font-size: 9vw;
     white-space: nowrap;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: bold;
+    color: white;
 }
 
 .welcometo > h3 {
     font-size: 2vw;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: bold;
+    color: white;
 }
 
 .headertextcontainer > h3:last-of-type {
