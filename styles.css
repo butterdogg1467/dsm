@@ -98,17 +98,30 @@ nav > picture > img {
 @keyframes underline {
     from {
         text-underline-offset: 0px;
+        text-decoration-color: rgba(255, 255, 255, 0);
     }
 
     to {
         text-underline-offset: 4px;
+        text-decoration-color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes underlinerev {
+    from {
+        text-underline-offset: 4px;
+        text-decoration-color: rgba(255, 255, 255, 1);
+    }
+
+    to {
+        text-underline-offset: 0px;
+        text-decoration-color: rgba(255, 255, 255, 0);
     }
 }
 
 .navbuttons > button:hover, .navbuttons > a > button:hover {
     cursor: pointer;
     text-decoration: underline;
-    animation: underline 0.2s;
     animation-fill-mode: forwards;
 }
 
@@ -120,10 +133,17 @@ nav > picture > img {
     gap: 30px;
 }
 
+.navsm > a, .footersm > a {
+    transition: transform 0.2s ease;
+}
+
+.navsm > a:hover, .footersm > a:hover {
+    transform: scale(1.1);
+}
+
 .smicon {
     max-height: 30px;
-    max-width: 30px;
-    background-color: orange;
+    max-width: 30px;    
 }
 
 header {
@@ -210,7 +230,8 @@ section > h1 {
 }
 
 .dd1c, .dd2c, .dd3c {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 93vw;
     border-bottom: 1px solid white;
@@ -237,16 +258,16 @@ section > h1 {
 }
 
 footer {
-    margin-left: 3vw;
-    margin-right: 3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 2.4vw 0px;
+    background-color: cornflowerblue;
 }
 
 .footerlefthalf {
+    margin-left: 3vw;
     align-items: center;
     text-align: center;
     display: flex;
@@ -263,6 +284,7 @@ footer {
 }
 
 .footerrighthalf {
+    margin-right: 3vw;
     align-items: center;
     text-align: center;
     display: flex;
@@ -274,8 +296,7 @@ footer {
 
 .fsmicon {
     max-width: 20px;
-    max-height: 20px;
-    background-color: orange;
+    max-height: 20px;   
 }
 
 @media screen and (max-width: 1020px) {
@@ -284,4 +305,36 @@ footer {
     }
 
 
+}
+
+.ddar {
+    transform: rotate(-180deg);
+}
+
+@keyframes dropdownanimate {
+    from {
+        min-height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        min-height: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes dropdownanimaterev {
+    from {
+        min-height: 100px;
+        opacity: 1;
+    }
+
+    to {
+        min-height: 0px;
+        opacity: 0;
+    }
+}
+
+.dropdowncontent {
+    width: 100%;
 }
