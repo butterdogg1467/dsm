@@ -9,8 +9,8 @@ let ddcDrop = dd1.querySelector('.ddcdrop');
 let ddcDrop2 = dd2.querySelector('.ddcdrop');
 let ddcDrop3 = dd3.querySelector('.ddcdrop');
 
-let ddcDropIg = document.createElement('h3')
-let ddcDropEmail = document.createElement('h3')
+let ddcDropIg = document.createElement('p')
+let ddcDropEmail = document.createElement('p')
 
 let ddcDrop2p1 = document.createElement('p')
 let ddcDrop2p2 = document.createElement('p')
@@ -25,6 +25,19 @@ let ddcDrop3p2a = document.createElement('a')
 
 let ddcDrop3p3 = document.createElement('p')
 let ddcDrop3p3a = document.createElement('a')
+
+ddcDropIg.classList.add('ddcdroptext')
+ddcDropEmail.classList.add('ddcdroptext')
+ddcDrop2p1.classList.add('ddcdroptext')
+ddcDrop2p2.classList.add('ddcdroptext')
+ddcDrop2p3.classList.add('ddcdroptext')
+ddcDrop3p11.classList.add('ddcdroptext')
+ddcDrop3p1a.classList.add('ddcdroptext')
+ddcDrop3p12.classList.add('ddcdroptext')
+ddcDrop3p2.classList.add('ddcdroptext')
+ddcDrop3p2a.classList.add('ddcdroptext')
+ddcDrop3p3.classList.add('ddcdroptext')
+ddcDrop3p3a.classList.add('ddcdroptext')
 
 
 dd1.addEventListener('click', () => {
@@ -63,7 +76,7 @@ dd1.addEventListener('click', () => {
                 ddcDropEmail.textContent = 'Email: desiuts@googlegroups.com';
                 ddcDrop.appendChild(ddcDropIg);
                 ddcDrop.appendChild(ddcDropEmail);
-            }, 100);
+            }, 250);
 
             dropdownExpanded = true;
         }
@@ -107,7 +120,7 @@ dd2.addEventListener('click', () => {
             ddcDrop2.appendChild(ddcDrop2p1);
             ddcDrop2.appendChild(ddcDrop2p2);
             ddcDrop2.appendChild(ddcDrop2p3);
-        }, 150);
+        }, 550);
 
             dropdownExpanded = true;
         }

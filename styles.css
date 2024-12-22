@@ -51,11 +51,11 @@ button {
     appearance: none;
 }
 
-h1, h2, h3, button, a {
+h1, h2, h3, button, a, p, ul {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
-h1, h3, h2 {
+h1, h3, h2, p, a, ul {
     font-weight: bold;
 }
 
@@ -66,6 +66,12 @@ h1, h3, h2 {
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.ddcdroptext {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1vw;
 }
 
 a:hover {
@@ -282,7 +288,7 @@ footer {
     align-items: center;
     text-align: center;
     padding: 2.4vw 0px;
-    background-color: cornflowerblue;
+    background-color: #B564F7   ;
 }
 
 .footerlefthalf {
@@ -294,6 +300,20 @@ footer {
     width: 11vw;
     font-size: 0.9vw;
     font-weight: bold;
+}
+
+.footerlefthalf > h2 > a {
+    color: white;
+    font-size: 1vw;
+    text-underline-offset: 5px;
+}
+
+a:hover {
+    filter: brightness(0.9);
+}
+
+.footerrighthalf > h2 {
+    color: white;
 }
 
 .footersm {
