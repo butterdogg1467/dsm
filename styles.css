@@ -524,6 +524,11 @@ a:hover {
         display: none;
     }
 
+    nav > picture > img {
+        max-width: 225px;
+        max-height: 100px;
+    }
+
     .hamburger-menu {
         display: block;
         background: none;
@@ -561,10 +566,11 @@ a:hover {
 
     section {
         align-items: center;
+        z-index: 0;
     }
 
     .sectionboxcontainer {
-        max-width: 80vw;
+        max-width: 100vw;
         flex-wrap: wrap;
         margin-left: 0px;
         margin-right: 0px;
@@ -573,12 +579,13 @@ a:hover {
     }
 
     .sectionbox {
-        min-width: 35vw;
-        min-height: 35vw;
+        min-width: 40vw;
+        min-height: 40vw;
     }
 
     section > h1 {
         font-size: 9vw;
+        margin-left: 0px;
     }
 
     .welcometo > h3 {
