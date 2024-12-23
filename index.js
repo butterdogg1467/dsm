@@ -198,7 +198,7 @@ buttons.forEach(button => {
     });
 });
 
-const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
     const closeMenu = document.querySelector('.close-menu');
     const navLinks = document.querySelector('.nav-links');
     const dropdowns = document.querySelectorAll('.nav-dropdown');
