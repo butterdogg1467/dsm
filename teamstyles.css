@@ -27,6 +27,7 @@ section {
     align-items: center;
     padding: 0px;
     padding: 2vw 0px;
+    min-height: auto;
 }
 
 section > h1 {
@@ -68,8 +69,8 @@ section > h1 {
     }
 
     section {
-        min-height: 100vh;
-        padding: 25vw 0vw;
+        min-height: fit-content;
+        padding: 5vw 0vw;
     }
 
     section > h1 {
