@@ -51,7 +51,7 @@ button {
     appearance: none;
 }
 
-h1, h2, h3, button, a, p, ul {
+h1, h2, h3, button, a, p, ul, i {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 

@@ -74,3 +74,60 @@ section > div:nth-of-type(4) > h3 {
     font-size: 21px;
     margin-bottom: 1vw;
 }
+
+@media (max-width: 600px) {
+    section {
+        min-height: fit-content;
+    }
+    section > div:first-of-type > h1 {
+        font-size: 13vw;
+        margin: 4vw 0vw;
+        margin-bottom: 8vw;
+    }
+
+    section > div:first-of-type > h3 {
+        font-size: 5vw;
+        margin: 4vw 0vw;
+        margin-bottom: 10vw;
+        font-weight: 500;
+    }
+
+    .heldfor {
+        margin-left: -16.5vw;
+    }
+
+    .heldfor > ul {
+        list-style: none;
+    }
+
+    section > div:nth-of-type(2) > ul > li {
+        margin-bottom: 4vw;
+    }
+
+    section > h3 {
+        font-weight: 500;
+        font-size: 5vw;
+        margin: 10vw 0vw;
+        margin-top: 6vw;
+    }
+
+    section > div:nth-of-type(3) > h2 {
+        font-size: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    section > div:nth-of-type(3) > i {
+        font-size: 5vw;
+    }
+    
+    section > div:nth-of-type(4) {
+        margin-left: -39vw;
+        font-weight: 500;
+    }
+
+    section > div:nth-of-type(4) > h3 {
+        font-size: 5vw;
+        margin-top: 5vw;
+        font-weight: 500;
+    }
+}
