@@ -171,7 +171,7 @@ header {
     flex: 1 1 auto;
     justify-content: start;
     align-items: end;
-    max-height: 30vw;
+    min-height: 30vw;
 }
 
 .welcometo {
@@ -211,7 +211,7 @@ header {
 
 section {
     background-color: red;
-    max-height: 1100px;
+    min-height: 50vw;
     z-index: 1;
     padding-top: 3vw;
     display: flex;
@@ -223,6 +223,7 @@ section > h1 {
     font-size: 4vw;
     margin-bottom: 2vw;
     margin-left: 3vw;
+    flex: 1 1 auto;
 }
 
 .sectionboxcontainer {
@@ -287,7 +288,8 @@ footer {
     align-items: center;
     text-align: center;
     padding: 2.4vw 0px;
-    background-color: #B564F7   ;
+    background-color: #B564F7;
+    flex: 1 1 auto;
 }
 
 .footerlefthalf {
@@ -335,14 +337,6 @@ a:hover {
 .fsmicon {
     max-width: 20px;
     max-height: 20px;   
-}
-
-@media screen and (max-width: 1020px) {
-    body {
-        background-color: purple;
-    }
-
-
 }
 
 .ddar {
@@ -443,3 +437,259 @@ a:hover {
     display: block;
 }
 
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.nav-links a {
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 5vw;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 930px) {
+    .navcontent {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background: none;
+        color: white;
+        width: 10vw;
+        height: 10vw;
+        font-weight: bold;
+        font-size: 5vw;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+    
+    .nav-dropdown .dropdown-menu{
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-dropdown.open .dropdown-menu {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .dropdown-menu-nav > a {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .navcontent {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background: none;
+        color: white;
+        width: 10vw;
+        height: 10vw;
+        font-weight: bold;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+    
+    .nav-dropdown .dropdown-menu{
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-dropdown.open .dropdown-menu {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .dropdown-menu-nav > a {
+        font-size: 2vw;
+    }
+
+    section {
+        align-items: center;
+    }
+
+    .sectionboxcontainer {
+        max-width: 80vw;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 4vw;
+        justify-content: center;
+    }
+
+    .sectionbox {
+        min-width: 35vw;
+        min-height: 35vw;
+    }
+
+    section > h1 {
+        font-size: 9vw;
+    }
+
+    .welcometo > h3 {
+        font-size: 4vw;
+    }
+
+    .headertextcontainer > h3:last-of-type {
+        font-size: 4vw;
+    }
+
+
+    .dd1c {
+        border-top: 1px solid white;
+    }
+
+    .dd1c, .dd2c, .dd3c {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: 93vw;
+        border-bottom: 1px solid white;
+    }
+
+    .dd1c:hover, .dd2c:hover, .dd3c:hover {
+        cursor: pointer;
+    }
+
+    .dropdown {
+        padding: 4vw 0px;
+        background: transparent;
+        text-align: start;
+        font-weight: bold;
+        font-size: 4vw;
+        display: flex;
+        min-width: 89vw;
+    }
+
+    .dropdownarrow {
+        min-width: 25px;
+        min-height: 25px;
+        transition: transform 0.2s;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 5vw 0px;
+        background-color: #B564F7;
+        flex: 1 1 auto;
+    }
+    
+    .footerlefthalf {
+        margin-left: 3vw;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 11vw;
+        font-size: 3vw;
+        font-weight: bold;
+        flex-direction: column;
+    }
+    
+    .footerlefthalf > h2 > a {
+        color: white;
+        font-size: 3vw;
+        text-underline-offset: 5px;
+    }
+    
+    a:hover {
+        filter: brightness(0.9);
+    }
+    
+    .footerrighthalf > h2 {
+        color: white;
+    }
+    
+    .footersm {
+        display: flex;
+        width: 12vw;
+        justify-content: space-evenly;
+        gap: 1vw;
+        margin-top: 3vw;
+    }
+    
+    .footerrighthalf {
+        margin-right: 3vw;
+        align-items: center;
+        text-align: end;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+        font-size: 3vw;
+        font-weight: bold;
+        gap: 3vw;
+    }
+    
+    .fsmicon {
+        max-width: 20px;
+        max-height: 20px;   
+    }
+
+    .navdropdown:nth-of-type(2) {
+        margin-bottom: 20px;
+    }
+    
+    .dropdown-menu > a {
+        font-size: 3vw;
+    }
+    
+}
