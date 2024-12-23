@@ -92,7 +92,7 @@ section:last-of-type {
     }
 
     section {
-        min-height: 53vh;
+        min-height: 56vh;
     }
 
     header {
@@ -115,6 +115,7 @@ section:last-of-type {
     section > button {
         max-width: 85vw;
         font-size: 25px;
+        margin-bottom: 3vw;
     }
 
     section:last-of-type {
