@@ -93,11 +93,16 @@ section:last-of-type {
 
     section {
         min-height: 56vh;
+        align-items: start;
     }
 
     header {
         min-height: 15vh;
         margin-bottom: 10vw;
+    }
+
+    .sectiontext {
+        margin-left: 3vw;
     }
 
     .sectiontext > h2 {
@@ -115,7 +120,7 @@ section:last-of-type {
     section > button {
         max-width: 85vw;
         font-size: 25px;
-        margin-bottom: 3vw;
+        margin-bottom: 10vw;
     }
 
     section:last-of-type {
