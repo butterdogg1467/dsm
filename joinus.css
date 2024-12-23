@@ -11,8 +11,13 @@ body {
 }
 
 .h1contain > h1 {
-    font-size: 7vw;
+    font-size: 8vw;
     margin-bottom: 3.5vw;
+}
+
+header {
+    align-items: end;
+    min-height: 10vw;
 }
 
 section {
@@ -20,7 +25,6 @@ section {
     flex-direction: column;
     padding-left: 3vw;
     padding-top: 4vw;
-    padding-bottom: 2vw;
     min-height: 15vw;
 }
 
@@ -78,26 +82,43 @@ section:last-of-type {
     justify-content: center;
 }
 
-.carousel > img {
-    max-width: 50px;
-    max-height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: background-color 0.2s;
-    position: relative;
-}
+@media (max-width: 600px) {
+    .navheaderbgjoin {
+        min-height: 37vh;
+    }
 
-.carousel > img:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
+    .h1contain > h1 {
+        font-size: 20vw;
+    }
 
-.carousel > img:first-of-type {
-    margin-left: 1vw;
-}
+    section {
+        min-height: 53vh;
+    }
 
-.carousel > img:last-of-type {
-    margin-right: 1vw;
-    left: 92vw;
-}
+    header {
+        min-height: 15vh;
+        margin-bottom: 10vw;
+    }
 
+    .sectiontext > h2 {
+        max-width: 85vw;
+    }
+
+    .sectiontext > h3 {
+        font-weight: 500;
+        font-size: 6vw;
+        max-width: 85vw;
+        margin-top: 3vw;
+        margin-bottom: 1.5vw;
+    }
+
+    section > button {
+        max-width: 85vw;
+        font-size: 25px;
+    }
+
+    section:last-of-type {
+        min-height: 30vh;
+    }
+}
 
