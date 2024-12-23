@@ -50,3 +50,39 @@ section > h1 {
     margin-bottom: 1vw;
     background-color: blue;
 }
+
+@media (max-width: 600px) {
+    .photocontain > img{
+        width: 45vw;
+        height: 32vw;
+        margin-bottom: 1vw;
+        background-color: blue;
+    }
+    
+    header {
+        justify-content: center;
+    }
+
+    .h1contain > h1 {
+        font-size: 9vw;
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 25vw 0vw;
+    }
+
+    section > h1 {
+        font-size: 8vw;
+    }
+
+    .photos {
+        flex-wrap: wrap;
+        max-width: 100vw;
+        gap: 5vw 3vw;
+    }
+
+    .navheaderbgteam {
+        min-height: 50vw;
+    }
+}
