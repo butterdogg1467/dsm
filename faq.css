@@ -58,5 +58,67 @@ section > div > h1 {
     margin-bottom: 0.5vw;
 }
 
+@media (max-width:600px) {
+    section {
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .faqtextcontain, .faqtitle {
+        margin-left: -30vw;
+    }
+
+    .faqtitle {
+        margin-left: -45vw;
+        margin-bottom: 10vw;
+    }
+
+    .faqtitle > h1 {
+        font-size: 19vw;
+    }
+
+    .faqtextcontain > div:first-of-type {
+        width: 80vw;
+    }
+
+    .faqtextcontain > div:first-of-type > h2:first-of-type, .faqtextcontain > div:first-of-type > p:first-of-type {
+        margin-bottom: 10vw;
+    }
+
+    .faqtextcontain > div:first-of-type > p:first-of-type {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .faqtextcontain > div:nth-of-type(2) > h2:first-of-type, .faqtextcontain > div:nth-of-type(2) > p:first-of-type {
+        margin-bottom: 10vw;
+    }
+
+    .faqtextcontain > div:nth-of-type(2) > p:first-of-type {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .faqtextcontain > div:nth-of-type(3) > h2:first-of-type, .faqtextcontain > div:nth-of-type(3) > p:first-of-type {
+        margin-bottom: 10vw;
+    }
+
+    .faqtextcontain > div:nth-of-type(3) > p:first-of-type {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .faqtextcontain > div:nth-of-type(3) > h3 {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .faqtextcontain > div:nth-of-type(3) > ul {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+}
+
 
 
