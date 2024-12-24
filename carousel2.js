@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentIndex--;
         }
 
-        track.style.transition = 'transform 0.5s ease-in-out';
+        track.style.transition = 'transform 0.3s ease-in-out';
         track.style.transform = `translateX(-${currentIndex * imgWidth}px)`;
 
         track.addEventListener('transitionend', () => {

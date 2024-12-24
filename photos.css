@@ -70,12 +70,6 @@ section {
     filter: invert();
 }
 
-@media (max-width:600px) {
-    header > div:first-of-type > h3 {
-        font-size: 6vw;
-    }
-}
-
 .carousel {
     position: relative;
     overflow: hidden;
@@ -108,6 +102,12 @@ section {
 
 .carousel-button.next {
     right: 10px;
+}
+
+@media (max-width:600px) {
+    header > div:first-of-type > h3 {
+        font-size: 6vw;
+    }
 }
 
 
