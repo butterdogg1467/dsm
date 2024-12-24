@@ -108,6 +108,23 @@ section {
     header > div:first-of-type > h3 {
         font-size: 6vw;
     }
-}
 
+    section {
+        height: 130vw;
+    }
+
+    .photo {
+        height: 80vw;
+        width: 80vw;
+        border: 5vw solid white;
+        border-bottom: 15vw solid white;
+    }
+
+    .photo > a {
+        height: 15vw;
+        bottom: -14.9vw;
+        width: 19vw;
+    }
+
+}
 
