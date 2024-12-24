@@ -7,6 +7,8 @@ section {
     grid-template-columns: repeat(3, 1fr);
     background: none;
     padding-top: 6vw;
+    padding-bottom: 5vw;
+    min-height: fit-content;
 }
 
 section > div:first-of-type > h1 {
@@ -61,4 +63,83 @@ section > div:last-of-type > picture:first-of-type > img {
 section > div:last-of-type > picture:last-of-type > img {
     position: relative;
     left: 50px;
+}
+
+@media (max-width:600px) {
+
+    .fullpagebgmember {
+        min-height: fit-content;
+    }
+
+    section {
+        display: flex;
+        margin-bottom: 30vw;
+    }
+
+    section > div:first-of-type {
+        width: 95vw;
+    }
+
+    section > div:first-of-type > h1 {
+        font-size: 12vw;
+    }
+
+    section > div:nth-of-type(2) {
+        margin-left: -11vw;
+        margin-top: 3vw;
+    }
+    
+    section > div:nth-of-type(2) > h2 {
+        margin-bottom: 3vw;
+    }
+
+    section > div:nth-of-type(2) > ul {
+        font-weight: 500;
+        margin-bottom: 10vw;
+    }
+
+    section > div:nth-of-type(2) > ul > li {
+        margin-bottom: 3vw;
+    }
+
+    section > div:nth-of-type(2) > a {
+        font-size: 8vw;
+    }
+
+    section > div:last-of-type {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        margin-top: 10vw;
+        margin-left: 5vw;
+    }
+
+    section > div:last-of-type > picture > img {
+        height: 50vw;
+        width: 80vw;
+        margin-bottom: 3vw;
+    }
+    
+    section > div:last-of-type > picture:first-of-type > img {
+        position: static;
+    }
+
+    section > div:last-of-type > picture:last-of-type > img {
+        position: static;
+        left: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        margin-bottom: 20vw;
+    }
+}
+
+@media (max-width: 450px) {
+    section {
+        margin-bottom: 5vw;
+    }
 }

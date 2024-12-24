@@ -533,10 +533,9 @@ a:hover {
         display: block;
         background: none;
         color: white;
-        width: 10vw;
+        width: 20vw;
         height: 10vw;
-        font-weight: bold;
-        font-size: 5vw;
+        font-size: 8vw;
         text-align: center;
     }
 
