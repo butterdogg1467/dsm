@@ -80,6 +80,50 @@ section:last-of-type {
     justify-content: center;
 }
 
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 25vw;
+    flex-shrink: 0;
+    background: none;
+    border: 1px solid black;
+    min-height: 20vw;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left-btn {
+    left: 10px;
+  }
+  
+  .right-btn {
+    right: 10px;
+  }
+  
+
+
 @media (max-width: 600px) {
     .navheaderbgjoin {
         min-height: 37vh;
@@ -123,45 +167,14 @@ section:last-of-type {
     section:last-of-type {
         min-height: 30vh;
     }
-}
 
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
   
   .carousel img {
-    width: 25vw;
+    min-width: 100%;
+    min-height: 100vw;
     flex-shrink: 0;
     background: none;
     border: 1px solid black;
-    min-height: 20vw;
   }
   
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .left-btn {
-    left: 10px;
-  }
-  
-  .right-btn {
-    right: 10px;
-  }
-  
+}
