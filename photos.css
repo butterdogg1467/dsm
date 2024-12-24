@@ -5,6 +5,7 @@
 header {
     display: flex;
     padding-bottom: 2vw;
+    min-height: fit-content;
 }
 
 header > div:first-of-type {
@@ -19,10 +20,16 @@ header > div:first-of-type > h1 {
 }
 
 header > div:first-of-type > h3 {
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 section {
     background-color: indigo;
     min-height: 33vw;
+}
+
+@media (max-width:600px) {
+    header > div:first-of-type > h3 {
+        font-size: 6vw;
+    }
 }
