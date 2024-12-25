@@ -67,3 +67,67 @@ header > h1 {
     max-width: 32vw;
     border-bottom: 1px solid white;
 }
+
+@media (max-width: 600px) {
+    header > h1 {
+        margin-bottom: 10vw;
+        font-size: 9.5vw;
+    }
+
+
+    section {
+        min-height: fit-content;
+    }
+    
+    .navfullpagebgfreshers {
+        min-height: fit-content;
+    }
+
+    .sectioncontent {
+        min-height: fit-content;
+        width: 90vw;
+        display: grid;
+        grid-template-rows: 1fr 55vw 55vw;
+    }
+
+    .sectionboxcontainer {
+        margin-left: 0vw;
+        justify-self: center;
+        min-width: 90vw;
+        gap: 3.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .sectionbox {
+        min-width: 40vw;
+        min-height: 40vw;
+    }
+
+    .youtubevideo {
+        width: 93%;
+        height: 45vw;
+        justify-self: center;
+        margin-bottom: 3vw;
+    }
+    
+    .vidanddropdown {
+        grid-row: 2/4;
+        min-height: fit-content;
+    }
+
+    .dropdown {
+        font-size: 4vw;
+        width: 75vw;
+        min-height: fit-content;
+    }
+
+    .dd1c, .dd2c {
+        min-width: 93%;
+        justify-self: center;
+    }
+
+    .ddcdroptext {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+}
