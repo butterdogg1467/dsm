@@ -1,3 +1,69 @@
 .navfullpagebgfreshers {
     background-color: darkorchid;
 }
+
+section {
+    background: none;
+    padding-top: 0px;
+}
+
+header {
+    min-height: fit-content;
+}
+
+header > h1 {
+    font-size: 9.5vw;
+}
+
+
+.sectioncontent {
+    display: flex;
+}
+
+.sectionboxcontainer {
+    display: flex;
+    gap: 1vw;
+    max-width: 60vw;
+    margin-right: 0vw;
+    margin-left: 3vw;
+    flex-wrap: wrap;
+}
+
+.sectionbox {
+    min-width: 19vw;
+    min-height: 19vw;
+    background-color: beige;
+    border-radius: 15px;
+    margin-bottom: 0.1vw;
+}
+
+.youtubevideo {
+    width: 32vw;
+    height: 18vw;
+    background-color: blue;
+}
+
+.dropdown {
+    flex-wrap: wrap;
+    min-height: fit-content;
+    min-width: 29vw;
+    font-size: 1.5vw;
+}
+
+.dropdowns {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    max-width: 100vw;
+}
+
+.dd1c {
+    border-top: 1px solid white;
+}
+
+.dd1c, .dd2c, .dd3c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 32vw;
+    border-bottom: 1px solid white;
+}
