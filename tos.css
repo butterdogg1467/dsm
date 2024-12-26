@@ -19,3 +19,14 @@ section {
     background: darkcyan;
     min-height: 50vw;
 }
+
+@media (max-width: 600px) {
+
+    .h1contain > h1 {
+        font-size: 7vw;
+    }
+
+    section {
+        min-height: 100vh;
+    }
+}
