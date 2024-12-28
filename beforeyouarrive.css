@@ -1,0 +1,209 @@
+section {
+    background: none;
+    padding-top: 1.5vw;
+    display: grid;
+    margin-right: 3vw;
+    grid-template-rows: 0.6fr 1fr 1fr;
+}
+
+.fullpagebgbya {
+    min-height: fit-content;
+    background-color: brown;
+}
+
+header {
+    min-height: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 3vw 0px;
+    border-bottom: 1px solid black;
+    margin-right: 3vw;
+}
+
+.dropdown {
+    flex-wrap: wrap;
+    min-height: fit-content;
+    min-width: 58vw;
+    font-size: 1.8vw;
+}
+
+.dropdowns {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.dd1c {
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    max-width: 60vw;
+    margin-left: 3vw;
+}
+
+ol {
+    margin-left: 2.5vw;
+}
+
+.youtubevideo {
+    width: 30vw;
+    height: 16vw;
+    background-color: blue;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.organize {
+    grid-row: 3/4;
+}
+
+.cannotbring {
+    grid-row: 4/5;
+}
+
+.transport {
+    grid-row: 5/6;
+}
+
+.beforeflight > h1, .organize > h1 {
+    font-size: 3vw;
+    margin-bottom: 2.5vw;
+}
+
+.cannotbring > h2, .transport > h2 {
+    font-size: 2vw;
+    margin-bottom: 2.5vw;
+}
+
+.beforeflight > ul, .beforeflight > p, .organize > p, .cannotbring > p, .transport > p {
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.beforeflight > ul > li, .beforeflight > p, .organize > p, .cannotbring > p, .transport > p {
+    margin-bottom: 1.5vw;
+}
+
+.beforeflight, .beforeflight, .organize, .cannotbring, .transport  {
+    margin-bottom: 2.5vw;
+}
+
+.sectioncontent {
+    margin-left: 3vw;
+    grid-row: 2/5;
+}
+
+.photodiv {
+    min-width: 29vw;
+    min-height: 30vw;
+    background-color: violet;
+    justify-self: center;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.sectionphotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1/-1;
+}
+
+
+@media (max-width: 600px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        margin-bottom: 3vw;
+    }
+
+    header > i{
+        font-size: 10vw;
+    }
+
+    .dropdown {
+        min-height: fit-content;
+        min-width: 85vw;
+        font-size: 6vw;
+    }
+    
+    .dropdowns {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    
+    .dd1c {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        min-width: 94vw;
+        margin-left: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    .ddcdroptext {
+        font-size: 5vw;
+        font-weight: 500;
+        margin-left: 11vw;
+        margin-bottom: 2vw;
+    }
+
+    .ddcdroptext:nth-of-type(7) {
+        margin-bottom: 10vw;
+    }
+
+    p.ddcdroptext:last-of-type {
+        margin-bottom: 8vw;
+        margin-left: 1vw;
+    }
+
+    .map {
+        width: 80vw;
+        height: 90vw;
+        margin-left: 3vw;
+    }
+
+    .photodiv {
+        min-width: 70vw;
+        min-height: 70vw;
+        margin-bottom: 5vw;
+        margin-left: 3vw;
+    }
+
+    .youtubevideo {
+        width: 85vw;
+        height: 45vw;
+        margin-left: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    .beforeflight > h1, .organize > h1 {
+        font-size: 8vw;
+        margin-bottom: 10vw;
+    }
+    
+    .cannotbring > h2, .transport > h2 {
+        font-size: 6vw;
+        margin-bottom: 10vw;
+    }
+    
+    .beforeflight > ul, .beforeflight > p, .organize > p, .cannotbring > p, .transport > p {
+        font-weight: 500;
+        font-size: 5vw;
+    }
+    
+    .beforeflight > ul > li, .beforeflight > p, .organize > p, .cannotbring > p, .transport > p {
+        margin-bottom: 5vw;
+    }
+    
+    .beforeflight, .beforeflight, .organize, .cannotbring, .transport  {
+        margin-bottom: 10vw;
+    }
+    
+
+}
+

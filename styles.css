@@ -51,7 +51,7 @@ button {
     appearance: none;
 }
 
-h1, h2, h3, button, a, p, ul, i {
+h1, h2, h3, button, a, p, ul, i, ol {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
@@ -345,12 +345,12 @@ a:hover {
 
 @keyframes dropdownanimate {
     from {
-        min-height: 0px;
+        padding-bottom: 0px;
         opacity: 0;
     }
 
     to {
-        min-height: 100px;
+        min-height: max-content;
         opacity: 1;
     }
 }
