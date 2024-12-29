@@ -1,0 +1,144 @@
+section:first-of-type > h1 {
+    flex: 0 0 0;
+    font-size: 4.5vw;
+}
+
+section:first-of-type {
+    padding-top: 1.5vw;
+    min-height: fit-content;
+}
+
+section:last-of-type {
+    background-color: peru;
+    min-height: fit-content;
+}
+
+header {
+    min-height: fit-content;
+}
+
+header > h1 {
+    font-size: 7vw;
+    margin-bottom: 5vw;
+    margin-top: 8vw;
+}
+
+
+@keyframes underlinerev {
+    from {
+        text-underline-offset: 15px;
+    }
+
+    to {
+        text-underline-offset: 4px;
+    }
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5vw;
+    margin: 0vw 3vw;
+}
+
+.buttons > button {
+    min-width: fit-content;
+    min-height: 12vw;
+    border-radius: 25px;
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 0;
+}
+
+.buttons > button:last-of-type {
+    text-align: start;
+    padding-left: 2vw;
+}
+
+.buttons > button:hover {
+    animation: underlinerev 0.3s ease forwards;
+}
+
+.navheaderbgwts {
+    background-color: lawngreen;
+}
+
+@media (max-width: 600px) {
+    header > h1 {
+        font-size: 20vw;
+        margin-bottom: 30vw;
+        margin-top: 25vw;
+    }
+
+    section:first-of-type > h1 {
+        font-size: 13vw;
+        margin-left: 3vw;
+        margin-top: 6vw;
+    }
+    
+    section:first-of-type {
+        padding-top: 5vw;
+        min-height: fit-content;
+        padding-bottom: 10vw;
+    }
+
+    .dropdown {
+        font-size: 6.2vw;
+        min-height: 30vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 85vw;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5vw;
+        margin: 0vw 3vw;
+    }
+    
+    .buttons > button {
+        min-width: fit-content;
+        min-height: 45vw;
+        border-radius: 25px;
+        font-size: 10vw;
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        text-decoration-thickness: 0;
+    }
+
+    .buttons > button:first-of-type {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        min-width: 42.5vw;
+    }
+
+    .buttons > button:nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left: 3vw;
+        min-width: 42.5vw;
+    }
+
+    .buttons > button:nth-of-type(3) {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        max-width: 90vw;
+        min-height: 35vw;
+        text-align: center;
+        margin-top: 3vw;
+    }
+
+    section:last-of-type {
+        max-height: 3px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 2.1vw;
+    }
+
+    
+}

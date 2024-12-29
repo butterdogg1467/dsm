@@ -254,7 +254,7 @@ section > h1 {
     border-top: 1px solid white;
 }
 
-.dd1c, .dd2c, .dd3c {
+.dd1c, .dd2c, .dd3c, .dd4c {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -262,7 +262,7 @@ section > h1 {
     border-bottom: 1px solid white;
 }
 
-.dd1c:hover, .dd2c:hover, .dd3c:hover {
+.dd1c:hover, .dd2c:hover, .dd3c:hover, .dd4c:hover {
     cursor: pointer;
 }
 
@@ -600,7 +600,7 @@ a:hover {
         border-top: 1px solid white;
     }
 
-    .dd1c, .dd2c, .dd3c {
+    .dd1c, .dd2c, .dd3c, .dd4c {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -608,7 +608,7 @@ a:hover {
         border-bottom: 1px solid white;
     }
 
-    .dd1c:hover, .dd2c:hover, .dd3c:hover {
+    .dd1c:hover, .dd2c:hover, .dd3c:hover, .dd4c:hover {
         cursor: pointer;
     }
 
