@@ -11,6 +11,14 @@ header > h1 {
     font-size: 7.5vw;
 }
 
+section {
+    display: grid;
+    grid-template-columns: 65vw 35vw;
+    grid-template-rows: 13vw;
+    min-height: fit-content;
+    z-index: revert-layer;
+}
+
 .allyouneed {
     font-size: 3vw;
     font-weight: bold;
@@ -19,4 +27,72 @@ header > h1 {
     margin-left: 3vw;
     padding-bottom: 3vw;
     line-height: 4vw;
+    max-height: fit-content;
+}
+
+section > .sectiontext > div:nth-child(1), 
+section > .sectiontext > div:nth-child(2) {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 1.05vw; 
+}
+
+section > .sectiontext > div:nth-child(1) {
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+
+}
+
+.basics > h1 {
+    font-size: 2.5vw;
+    margin-left: 3vw;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+}
+
+.ddcdroptext {
+    font-weight: 500;
+}
+
+ol.ddcdroptext {
+    margin-left: 2vw;
+}
+
+.photodiv {
+    width: 29vw;
+    height: 30vw;
+    margin-bottom: 5vw;
+    margin-left: 2.5vw;
+    background-color: blueviolet;
+}
+
+.youtubevideo {
+    width: 30vw;
+    height: 16vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    background-color: blueviolet;
+}
+
+.allyouneed {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.vidandphoto {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.sectiontext {
+    grid-column: 1/2;
+}
+
+.dropdown {
+    min-width: 57vw;
+}
+
+.dropdowns {
+    min-height: fit-content;
+    max-height: fit-content;
 }
