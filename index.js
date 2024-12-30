@@ -4,7 +4,9 @@ let buttons = document.querySelectorAll('.navbutton')
 let dd1 = document.querySelector('.dd1c')
 let dd2 = document.querySelector('.dd2c')
 let dd3 = document.querySelector('.dd3c')
-let dropdownExpanded = false
+let dropdown1Expanded = false
+let dropdown2Expanded = false
+let dropdown3Expanded = false
 let ddcDrop = dd1.querySelector('.ddcdrop');
 let ddcDrop2 = dd2.querySelector('.ddcdrop');
 let ddcDrop3 = dd3.querySelector('.ddcdrop');
@@ -40,6 +42,34 @@ ddcDrop3p3.classList.add('ddcdroptext')
 ddcDrop3p3a.classList.add('ddcdroptext')
 
 
+ddcDropIg.textContent = 'Instagram: @utsindiansociety';
+ddcDropEmail.textContent = 'Email: desiuts@googlegroups.com';
+
+ddcDrop2p1.textContent = 'UTS Indian Society - DESI is Australia’s largest Indian Society with over 14,000 students having engaged with our marketing material and over 6400 unique attendees at our events in 2023 we have set benchmarks in student engagement.';
+ddcDrop2p2.textContent = 'We provide targeted premier advertising and marketing opportunities for companies and agencies across Australia through our state-based partners in Victoria, ACT, and New South Wales.';
+ddcDrop2p3.textContent = 'Find out more about Sponsorships & Corporate Partnerships by emailing us on desiuts@googlegroups.com.';
+
+
+ddcDrop3p11.textContent = 'Check Our ';
+ddcDrop3p1a.textContent = 'Freshers Guide ';
+ddcDrop3p1a.href = 'freshersguide.html';
+ddcDrop3p12.textContent = 'for your questions regarding moving to Sydney, Accommodation and more about Uni-Life!';
+
+ddcDrop3p11.appendChild(ddcDrop3p1a);
+ddcDrop3p11.appendChild(ddcDrop3p12.firstChild);
+
+ddcDrop3p2.textContent = 'For information about UTS Student & Support Services: ';
+ddcDrop3p2a.textContent = 'Click Here';
+ddcDrop3p2a.href = '';
+
+ddcDrop3p2.appendChild(ddcDrop3p2a);
+
+ddcDrop3p3.textContent = 'In Emergencies, Dial ';
+ddcDrop3p3a.textContent = '000';
+ddcDrop3p3a.href = '';
+
+ddcDrop3p3.appendChild(ddcDrop3p3a);
+
 dd1.addEventListener('click', () => {
     let dropdownArrow = dd1.querySelector('.dropdownarrow');
     
@@ -47,13 +77,13 @@ dd1.addEventListener('click', () => {
             dropdownArrow.classList.toggle('ddar');
         }
         
-        if (dropdownExpanded === true) {
-            ddcDrop.style.animation = "dropdownanimaterev 0.5s forwards";
+        if (dropdown1Expanded === true) {
+            ddcDrop.style.animation = "dropdownanimaterev 0.3s forwards";
 
             dd1.classList.remove('expanded');
 
-            ddcDropIg.textContent = ' '
-            ddcDropEmail.textContent = ' '
+            ddcDropIg.style.display = 'none'
+            ddcDropEmail.style.display = 'none'
 
             const handleAnimation = () => {
                 dd1.removeChild(ddcDrop);
@@ -61,24 +91,24 @@ dd1.addEventListener('click', () => {
             }
 
             ddcDrop.addEventListener('animationend', handleAnimation);
-            dropdownExpanded = false;
+            dropdown1Expanded = false;
         } else {
 
             if (ddcDrop.parentNode) {
                 ddcDrop.parentNode.removeChild(ddcDrop);
             }
 
-            ddcDrop.style.animation = "dropdownanimate 0.5s forwards";
+            ddcDrop.style.animation = "dropdownanimate 0.3s forwards";
             dd1.appendChild(ddcDrop);
 
             setTimeout(() => {
-                ddcDropIg.textContent = 'Instagram: @utsindiansociety';
-                ddcDropEmail.textContent = 'Email: desiuts@googlegroups.com';
+                ddcDropIg.style.display = 'block';
+                ddcDropEmail.style.display = 'block';
                 ddcDrop.appendChild(ddcDropIg);
                 ddcDrop.appendChild(ddcDropEmail);
-            }, 250);
+            }, 10);
 
-            dropdownExpanded = true;
+            dropdown1Expanded = true;
         }
 })
 
@@ -89,14 +119,14 @@ dd2.addEventListener('click', () => {
             dropdownArrow.classList.toggle('ddar');
         }
         
-        if (dropdownExpanded === true) {
-            ddcDrop2.style.animation = "dropdownanimaterev 0.5s forwards";
+        if (dropdown2Expanded === true) {
+            ddcDrop2.style.animation = "dropdownanimaterev 0.3s forwards";
 
             dd2.classList.remove('expanded');
 
-            ddcDrop2p1.textContent = ''
-            ddcDrop2p2.textContent = ''
-            ddcDrop2p3.textContent = ''
+            ddcDrop2p1.style.display = 'none'
+            ddcDrop2p2.style.display = 'none'
+            ddcDrop2p3.style.display = 'none'
 
             const handleAnimation = () => {
                 dd2.removeChild(ddcDrop2);
@@ -104,25 +134,25 @@ dd2.addEventListener('click', () => {
             }
 
             ddcDrop2.addEventListener('animationend', handleAnimation);
-            dropdownExpanded = false;
+            dropdown2Expanded = false;
         } else {
             if (ddcDrop2.parentNode) {
                 ddcDrop2.parentNode.removeChild(ddcDrop2);
             }
-            ddcDrop2.style.animation = "dropdownanimate 0.5s forwards";
+            ddcDrop2.style.animation = "dropdownanimate 0.3s forwards";
             dd2.appendChild(ddcDrop2);
 
             setTimeout(() => {
-            ddcDrop2p1.textContent = 'UTS Indian Society - DESI is Australia’s largest Indian Society with over 14,000 students having engaged with our marketing material and over 6400 unique attendees at our events in 2023 we have set benchmarks in student engagement.';
-            ddcDrop2p2.textContent = 'We provide targeted premier advertising and marketing opportunities for companies and agencies across Australia through our state-based partners in Victoria, ACT, and New South Wales.';
-            ddcDrop2p3.textContent = 'Find out more about Sponsorships & Corporate Partnerships by emailing us on desiuts@googlegroups.com.';
+            ddcDrop2p1.style.display = 'block'
+            ddcDrop2p2.style.display = 'block'
+            ddcDrop2p3.style.display = 'block'
 
             ddcDrop2.appendChild(ddcDrop2p1);
             ddcDrop2.appendChild(ddcDrop2p2);
             ddcDrop2.appendChild(ddcDrop2p3);
-        }, 550);
+        }, 10);
 
-            dropdownExpanded = true;
+            dropdown2Expanded = true;
         }
 })
 
@@ -133,55 +163,44 @@ dd3.addEventListener('click', () => {
             dropdownArrow.classList.toggle('ddar');
         }
         
-        if (dropdownExpanded === true) {
-            ddcDrop3.style.animation = "dropdownanimaterev 0.5s forwards";
+        if (dropdown3Expanded === true) {
+            ddcDrop3.style.animation = "dropdownanimaterev 0.3s forwards";
 
             dd3.classList.remove('expanded');
 
-            ddcDrop3.textContent = ''
-
+            ddcDrop3p11.style.display = 'none'
+            ddcDrop3p2.style.display = 'none';
+            ddcDrop3p3.style.display = 'none';
+            
             const handleAnimation = () => {
                 dd3.removeChild(ddcDrop3);
                 ddcDrop3.removeEventListener('animationend', handleAnimation);
             }
 
             ddcDrop3.addEventListener('animationend', handleAnimation);
-            dropdownExpanded = false;
+            dropdown3Expanded = false;
         } else {
             if (ddcDrop3.parentNode) {
                 ddcDrop3.parentNode.removeChild(ddcDrop3);
             }
-            ddcDrop3.style.animation = "dropdownanimate 0.5s forwards";
+            ddcDrop3.style.animation = "dropdownanimate 0.3s forwards";
 
             dd3.appendChild(ddcDrop3);
 
             setTimeout(() => {
-                ddcDrop3p11.textContent = 'Check Our ';
-                ddcDrop3p1a.textContent = 'Freshers Guide ';
-                ddcDrop3p1a.href = 'freshersguide.html';
-                ddcDrop3p12.textContent = 'for your questions regarding moving to Sydney, Accommodation and more about Uni-Life!';
-                
-                ddcDrop3p11.appendChild(ddcDrop3p1a);
-                ddcDrop3p11.appendChild(ddcDrop3p12.firstChild);
+                ddcDrop3p11.style.display = 'block'
+                ddcDrop3p11.style.display = 'block'
             
-                ddcDrop3p2.textContent = 'For information about UTS Student & Support Services: ';
-                ddcDrop3p2a.textContent = 'Click Here';
-                ddcDrop3p2a.href = '';
+                ddcDrop3p2.style.display = 'block';
             
-                ddcDrop3p2.appendChild(ddcDrop3p2a);
-            
-                ddcDrop3p3.textContent = 'In Emergencies, Dial ';
-                ddcDrop3p3a.textContent = '000';
-                ddcDrop3p3a.href = '';
-            
-                ddcDrop3p3.appendChild(ddcDrop3p3a);
+                ddcDrop3p3.style.display = 'block';
             
                 ddcDrop3.appendChild(ddcDrop3p11);
                 ddcDrop3.appendChild(ddcDrop3p2);
                 ddcDrop3.appendChild(ddcDrop3p3);
-            }, 100);
+            }, 10);
 
-            dropdownExpanded = true;
+            dropdown3Expanded = true;
         }
 })
 

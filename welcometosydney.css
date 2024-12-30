@@ -6,11 +6,13 @@ section:first-of-type > h1 {
 section:first-of-type {
     padding-top: 1.5vw;
     min-height: fit-content;
+    z-index: revert-layer;
 }
 
 section:last-of-type {
     background-color: peru;
     min-height: fit-content;
+    z-index: revert-layer;
 }
 
 header {
@@ -22,7 +24,6 @@ header > h1 {
     margin-bottom: 5vw;
     margin-top: 8vw;
 }
-
 
 @keyframes underlinerev {
     from {
@@ -63,6 +64,31 @@ header > h1 {
 
 .navheaderbgwts {
     background-color: lawngreen;
+}
+
+section:first-of-type {
+    transition: all 0.3s ease;
+}
+
+.expanded {
+    height: auto;
+    min-height: fit-content;
+}
+
+.dropdowns {
+    min-height: fit-content;
+}
+
+.ddcdroptext {
+    font-weight: 500;
+}
+
+h2.ddcdroptext {
+    font-weight: bold;
+}
+
+ol.ddcdroptext {
+    margin-left: 3vw;
 }
 
 @media (max-width: 600px) {

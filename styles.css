@@ -345,25 +345,21 @@ a:hover {
 
 @keyframes dropdownanimate {
     from {
-        padding-bottom: 0px;
-        opacity: 0;
+        max-height: 0px;
     }
 
     to {
-        min-height: max-content;
-        opacity: 1;
+        max-height: 30vw;
     }
 }
 
 @keyframes dropdownanimaterev {
     from {
         min-height: 100px;
-        opacity: 1;
     }
 
     to {
         min-height: 0px;
-        opacity: 0;
     }
 }
 
