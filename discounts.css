@@ -1,0 +1,25 @@
+.navheaderbgdiscounts {
+    background-color: coral;
+}
+
+header {
+    min-height: fit-content;
+    justify-content: center;
+}
+
+header > h1 {
+    font-size: 3vw;
+    margin: 0px;
+    margin-bottom: 1ve;
+}
+
+section {
+    min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+    header > h1 {
+        font-size: 9.5vw;
+        text-align: center;
+    }
+}
