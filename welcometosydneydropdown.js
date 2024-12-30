@@ -51,8 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let ddc2li13 = document.createElement('li')
     let ddc2li14 = document.createElement('li')
 
-    let ddc2assistance = document.createElement('p')
-    
+    let ddc2assistance = document.createElement('h2')
+    let ddc2a = document.createElement('a')
+    ddc2a.style.textDecoration = 'none'
+
     let ddc3h21 = document.createElement('h2');
     let ddc3Ol1 = document.createElement('ol');
     let ddc3li1 = document.createElement('li');
@@ -96,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let ddc4Li3 = document.createElement('li');
     let ddc4Li4 = document.createElement('li');
     let ddc4Li5 = document.createElement('li');
+    let ddc4a = document.createElement('a')
 
     ddcDrop1p1.classList.add('ddcdroptext');
     ddcDrop1p2.classList.add('ddcdroptext');
@@ -151,7 +154,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ddcDrop2h26.textContent = "Emergency Services";
     ddcDrop2h27.textContent = "Understanding Exclusions and Waiting Periods";
     ddcDrop2h28.textContent = "Renewing or Changing OSHC";
-    ddc2assistance.textContent = "Seek Assistance: Click Here";
+    ddc2assistance.textContent = "Seek Assistance: ";
+    ddc2a.textContent = 'Click Here'
+    ddc2a.href = ''
+
+    ddc2assistance.appendChild(ddc2a)
 
     ddc2li1.textContent = "Coverage Details: Familiarise yourself with what your OSHC policy covers. This typically includes visits to the doctor (GP), some hospital treatments, ambulance services, and limited pharmaceuticals.";
     ddc2li2.textContent = "Policy Duration: Your OSHC should cover the entire duration of your student visa.";
@@ -289,6 +296,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ddc4Li4.textContent = 'ReadyGrad';
     ddc4Li5.textContent = 'Ribit';
 
+    ddc4a.textContent = 'Find Out More On Our Freshers Guide Careers Page'
+    ddc4a.href = 'working.html'
+
     ddc4Ol.appendChild(ddc4Li1);
     ddc4Ol.appendChild(ddc4Li2);
     ddc4Ol.appendChild(ddc4Li3);
@@ -299,8 +309,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ddc4p2.classList.add('ddcdroptext')
     ddc4p3.classList.add('ddcdroptext')
     ddc4Ol.classList.add('ddcdroptext')
+    ddc4a.classList.add('ddcdroptext')
 
-    
+    ddc4a.style.textDecoration = 'none'
 
     
     dd1.addEventListener('click', () => {
@@ -556,6 +567,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ddc4p2.style.display = 'none'
                 ddc4p3.style.display = 'none'
                 ddc4Ol.style.display = 'none'
+                ddc4a.style.display = 'none'
 
                 const handleAnimation = () => {
                     dd4.removeChild(ddcDrop4);
@@ -578,11 +590,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     ddc4p2.style.display = 'block'
                     ddc4p3.style.display = 'block'
                     ddc4Ol.style.display = 'block'
+                    ddc4a.style.display = 'block'
 
                     ddcDrop4.appendChild(ddc4p1);
                     ddcDrop4.appendChild(ddc4p2);
                     ddcDrop4.appendChild(ddc4p3);
                     ddcDrop4.appendChild(ddc4Ol);
+                    ddcDrop4.appendChild(ddc4a);
 
 
                 }, 10);

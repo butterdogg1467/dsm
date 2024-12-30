@@ -1,3 +1,22 @@
 .navheaderbgworking {
     background-color: brown;
 }
+
+header {
+    min-height: fit-content;
+    padding-bottom: 0.5vw;
+}
+
+header > h1 {
+    font-size: 7.5vw;
+}
+
+.allyouneed {
+    font-size: 3vw;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding-bottom: 3vw;
+    line-height: 4vw;
+}
