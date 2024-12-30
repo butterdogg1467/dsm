@@ -96,3 +96,83 @@ ol.ddcdroptext {
     min-height: fit-content;
     max-height: fit-content;
 }
+
+@media (max-width: 600px) {
+    header > h1 {
+        font-size: 15vw;
+        margin-bottom: 10vw;
+        margin-top: 10vw;
+    }
+
+    .allyouneed > i{
+        font-size: 9vw;
+    }
+
+    section {
+        grid-template-rows: 60vw 1fr 140vw ;
+        grid-template-columns: 96vw;
+    }
+
+    .allyouneed {
+        min-height: fit-content;
+        line-height: 9vw;
+        grid-row: 1/2;
+    }
+
+    .sectiontext {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .vidandphoto {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    section > .sectiontext > div:nth-child(1) {
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+
+    section > .sectiontext > div:nth-child(2) {
+        font-size: 5vw;
+    }
+
+    .basics > h1 {
+        font-size: 8vw;
+        margin-bottom: 8vw;
+    }
+
+    .dropdown {
+        min-width: 80vw;
+    }
+
+    .dd1c, .dd2c, .dd3c, .dd4c {
+        padding: 4vw 0px;
+    }
+    
+    ol.ddcdroptext {
+        margin-left: 10vw;
+    }
+
+    .vidandphoto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: start;
+        margin-top: 5vw;
+    }
+
+    .youtubevideo {
+        width: 85vw;
+        height: 45vw;
+        margin: 0px 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .photodiv {
+        min-width: 80vw;
+        min-height: 70vw;
+        margin: 0px;
+    }
+}
