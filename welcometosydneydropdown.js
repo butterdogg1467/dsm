@@ -460,36 +460,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 ddc3h21.style.display = 'none';
                 ddc3Ol1.style.display = 'none';
-                ddc3li1.style.display = 'none';
-                ddc3li2.style.display = 'none';
                 ddc3h22.style.display = 'none';
                 ddc3Ol2.style.display = 'none';
-                ddc3li3.style.display = 'none';
                 ddc3h23.style.display = 'none';
                 ddc3Ol3.style.display = 'none';
-                ddc3li4.style.display = 'none';
-                ddc3li5.style.display = 'none';
                 ddc3h24.style.display = 'none';
                 ddc3Ol4.style.display = 'none';
-                ddc3li6.style.display = 'none';
-                ddc3li7.style.display = 'none';
                 ddc3h25.style.display = 'none';
                 ddc3Ol5.style.display = 'none';
-                ddc3li8.style.display = 'none';
-                ddc3li9.style.display = 'none';
                 ddc3h26.style.display = 'none';
                 ddc3Ol6.style.display = 'none';
-                ddc3li10.style.display = 'none';
-                ddc3li11.style.display = 'none';
                 ddc3h27.style.display = 'none';
                 ddc3Ol7.style.display = 'none';
-                ddc3li12.style.display = 'none';
                 ddc3h28.style.display = 'none';
                 ddc3Ol8.style.display = 'none';
-                ddc3li13.style.display = 'none';
                 ddc3h29.style.display = 'none';
                 ddc3Ol9.style.display = 'none';
-                ddc3li14.style.display = 'none';
     
                 const handleAnimation = () => {
                     dd3.removeChild(ddcDrop3);
@@ -510,36 +496,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     ddc3h21.style.display = 'block';
                     ddc3Ol1.style.display = 'block';
-                    ddc3li1.style.display = 'block';
-                    ddc3li2.style.display = 'block';
                     ddc3h22.style.display = 'block';
                     ddc3Ol2.style.display = 'block';
-                    ddc3li3.style.display = 'block';
                     ddc3h23.style.display = 'block';
                     ddc3Ol3.style.display = 'block';
-                    ddc3li4.style.display = 'block';
-                    ddc3li5.style.display = 'block';
                     ddc3h24.style.display = 'block';
                     ddc3Ol4.style.display = 'block';
-                    ddc3li6.style.display = 'block';
-                    ddc3li7.style.display = 'block';
                     ddc3h25.style.display = 'block';
                     ddc3Ol5.style.display = 'block';
-                    ddc3li8.style.display = 'block';
-                    ddc3li9.style.display = 'block';
                     ddc3h26.style.display = 'block';
                     ddc3Ol6.style.display = 'block';
-                    ddc3li10.style.display = 'block';
-                    ddc3li11.style.display = 'block';
                     ddc3h27.style.display = 'block';
                     ddc3Ol7.style.display = 'block';
-                    ddc3li12.style.display = 'block';
                     ddc3h28.style.display = 'block';
                     ddc3Ol8.style.display = 'block';
-                    ddc3li13.style.display = 'block';
                     ddc3h29.style.display = 'block';
                     ddc3Ol9.style.display = 'block';
-                    ddc3li14.style.display = 'block';
 
                     ddcDrop3.appendChild(ddc3h21);
                     ddcDrop3.appendChild(ddc3Ol1);
