@@ -94,9 +94,8 @@ nav {
 }
 
 nav > picture > img {
-    background-color: blue;
-    min-width: 225px;
-    min-height: 100px;
+    max-width: 10vw;
+    max-height: 10vw;
     margin-top: 25px;
 }
 
@@ -112,6 +111,10 @@ nav > picture > img {
     margin-left: 25px;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-weight: 500;
+}
+
+.navbuttons {
+
 }
 
 @keyframes underline {
@@ -171,7 +174,7 @@ header {
     flex: 1 1 auto;
     justify-content: start;
     align-items: end;
-    min-height: 30vw;
+    min-height: 20vw;
 }
 
 .welcometo {
@@ -210,8 +213,8 @@ header {
 }
 
 section {
-    background-color: red;
-    min-height: 50vw;
+    background-color: #2d7f9d;
+    min-height: 30vw;
     z-index: 1;
     padding-top: 3vw;
     display: flex;
@@ -223,7 +226,6 @@ section > h1 {
     font-size: 4vw;
     margin-bottom: 2vw;
     margin-left: 3vw;
-    flex: 1 1 auto;
 }
 
 .sectionboxcontainer {
@@ -288,7 +290,7 @@ footer {
     align-items: center;
     text-align: center;
     padding: 2.4vw 0px;
-    background-color: #B564F7;
+    background-color: #2d7f9d;
     flex: 1 1 auto;
 }
 
@@ -375,7 +377,7 @@ a:hover {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color:#B564F7;
+    background-color: #2d7f9d;
     padding: 10px;
     min-width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -473,46 +475,6 @@ a:hover {
     top: 20px;
     right: 20px;
     cursor: pointer;
-}
-
-@media (max-width: 930px) {
-    .navcontent {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-        background: none;
-        color: white;
-        width: 10vw;
-        height: 10vw;
-        font-weight: bold;
-        font-size: 5vw;
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-    
-    .nav-dropdown .dropdown-menu{
-        display: none;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    .nav-dropdown.open .dropdown-menu {
-        display: flex;
-    }
-
-    .nav-links a {
-        color: white;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .dropdown-menu-nav > a {
-        font-size: 2vw;
-    }
 }
 
 @media (max-width: 600px) {
@@ -630,7 +592,7 @@ a:hover {
         align-items: center;
         text-align: center;
         padding: 5vw 0px;
-        background-color: #B564F7;
+        background-color: #2d7f9d;
         flex: 1 1 auto;
     }
     
