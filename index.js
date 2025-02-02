@@ -32,6 +32,7 @@ ddcDropIg.classList.add('ddcdroptext')
 ddcDropEmail.classList.add('ddcdroptext')
 ddcDrop2p1.classList.add('ddcdroptext')
 ddcDrop2p2.classList.add('ddcdroptext')
+ddcDrop2p3.classList.add('ddcdroptext')
 // ddcDrop2p3.classList.add('ddcdroptext')
 // ddcDrop3p11.classList.add('ddcdroptext')
 // ddcDrop3p1a.classList.add('ddcdroptext')
@@ -45,9 +46,9 @@ ddcDrop2p2.classList.add('ddcdroptext')
 ddcDropIg.textContent = 'Instagram: @dsa.canada';
 ddcDropEmail.textContent = 'Email: desistudentscanada@gmail.com';
 
-ddcDrop2p1.textContent = 'UTS Indian Society - DESI is Australia’s largest Indian Society with over 14,000 students having engaged with our marketing material and over 6400 unique attendees at our events in 2023 we have set benchmarks in student engagement.';
-ddcDrop2p2.textContent = 'We provide targeted premier advertising and marketing opportunities for companies and agencies across Australia through our state-based partners in Victoria, ACT, and New South Wales.';
-ddcDrop2p3.textContent = 'Find out more about Sponsorships & Corporate Partnerships by emailing us on desistudentscanada@gmail.com.';
+ddcDrop2p1.textContent = 'Desi Students Association Canada - DSA is Canada’s largest South Asian Student Society with over 938,000 students having engaged with our marketing material and over 4200 unique attendees at our events in 2024 we have set benchmarks in student engagement';
+ddcDrop2p2.textContent = 'We provide targeted premier advertising and marketing opportunities for companies and agencies across Ontario through our chapters ';
+ddcDrop2p3.textContent = 'Find out more about Sponsorships & Corporate Partnerships by emailing us on desistudentscanada@gmail.com';
 
 
 // ddcDrop3p11.textContent = 'Check Our ';

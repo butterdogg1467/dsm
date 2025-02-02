@@ -113,10 +113,6 @@ nav > picture > img {
     font-weight: 500;
 }
 
-.navbuttons {
-
-}
-
 @keyframes underline {
     from {
         text-underline-offset: 0px;
@@ -299,7 +295,6 @@ footer {
     align-items: center;
     text-align: center;
     display: flex;
-    justify-content: space-between;
     width: 11vw;
     font-size: 0.9vw;
     font-weight: bold;

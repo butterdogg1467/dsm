@@ -1,13 +1,14 @@
 body {
     height: 100vh;
     width: 100vw;
+    background-color: #2d7f9d;
 }
 
 .navheaderbgteam {
-    background-color: red;
-    min-height: 18vw;
+    min-height: fit-content;
     min-width: 100vw;
     flex-direction: column;
+    background-color: black;
 }
 
 header {
@@ -15,13 +16,18 @@ header {
     min-height: fit-content;
 }
 
+.h1contain {
+    width: 100%;
+    text-align: center;
+}
+
 .h1contain > h1 {
     font-weight: bolder;
     font-size: 7vw;
+    color: white;
 }
 
 section {
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,16 +52,27 @@ section > h1 {
 }
 
 .photocontain > img{
-    width: 14vw;
-    height: 12vw;
+    min-width: 30vw;
+    min-height: 30vw;
     margin-bottom: 1vw;
     background-color: blue;
 }
 
+.photocontain > h2:first-of-type {
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    max-width: 30vw;
+}
+
+.photocontain > h2:last-of-type {
+    max-width: 30vw;
+    font-size: 1vw;
+}
+
 @media (max-width: 600px) {
     .photocontain > img{
-        width: 45vw;
-        height: 32vw;
+        width: 65vw;
+        height: 65vw;
         margin-bottom: 1vw;
         background-color: blue;
     }
@@ -86,4 +103,16 @@ section > h1 {
     .navheaderbgteam {
         min-height: 50vw;
     }
+
+    .photocontain > h2:first-of-type {
+        margin-bottom: 2vw;
+        font-size: 3vw;
+        max-width: 65vw;
+    }
+
+    .photocontain > h2:last-of-type {
+        max-width: 65vw;
+        font-size: 3vw;
+    }
+
 }
