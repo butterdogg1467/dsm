@@ -1,22 +1,28 @@
 .navheaderbgphotos {
-    background-color: firebrick;
+    background-color: black;
 }
 
 header {
     display: flex;
     padding-bottom: 2vw;
     min-height: fit-content;
+    margin-left: 0vw;
 }
 
 header > div:first-of-type {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 3vw;
+}
+
+header > div:first-of-type {
+    width: 100%;
+    text-align: center;
 }
 
 header > div:first-of-type > h1 {
-    font-size: 14.5vw;
+    font-size: 8vw;
+    color: white;
 }
 
 header > div:first-of-type > h3 {
@@ -24,7 +30,7 @@ header > div:first-of-type > h3 {
 }
 
 section {
-    background-color: indigo;
+    background-color: #2d7f9d;
     min-height: 33vw;
     display: flex;
     flex-direction: row;

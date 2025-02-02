@@ -1,23 +1,42 @@
 .navheaderbgtos {
-    background-color: darkgoldenrod;
-    min-height: 25vw;
+    background-color: black;
+    min-height: fit-content;
 }
 
 header {
     display: flex;
     justify-content: center;
     padding-bottom: 2vw;
+    min-height: fit-content;
 }
 
 header > div > h1 {
     color: white;
     font-size: 3vw;
-    margin-top: 7vw
 }
 
 section {
-    background: darkcyan;
+    background: #2d7f9d;
     min-height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toscontent {
+    max-width: 50vw;
+    min-height: fit-content;
+    text-align: center;
+}
+
+.toscontent > div > h2 {
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+}
+
+.toscontent > div > p {
+    margin-bottom: 1vw;
+    font-size: 1.1vw;
 }
 
 @media (max-width: 600px) {
@@ -28,5 +47,20 @@ section {
 
     section {
         min-height: 100vh;
+        padding-top: 5vw;
+    }
+
+    .toscontent {
+        max-width: 85vw;
+    }
+
+    .toscontent > div > h2 {
+        font-size: 6vw;
+        margin-bottom: 4vw;
+    }
+
+    .toscontent > div > p {
+        margin-bottom: 3vw;
+        font-size: 4.5vw;
     }
 }

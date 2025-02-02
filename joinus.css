@@ -147,16 +147,12 @@ section:last-of-type {
 
     section:first-of-type {
         min-height: fit-content;
-        align-items: start;
+        align-items: center;
     }
 
     header {
         min-height: 15vh;
         margin-bottom: 10vw;
-    }
-
-    .sectiontext {
-        margin-left: 3vw;
     }
 
     .sectiontext > h2 {
