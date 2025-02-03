@@ -3,6 +3,11 @@ body {
     width: 100vw;
 }
 
+nav {
+    background-color: black;
+    padding-bottom: 5vw;
+}
+
 .fullpagebgelect {
     background-color: #2d7f9d;
 }

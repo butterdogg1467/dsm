@@ -11,6 +11,10 @@ section {
     min-height: fit-content;
 }
 
+nav {
+    background-color: black;
+}
+
 section > div:first-of-type > h1 {
     font-size: 5vw;
     margin-left: 3vw;
